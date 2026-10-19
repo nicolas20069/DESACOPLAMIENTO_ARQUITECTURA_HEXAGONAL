@@ -1,7 +1,9 @@
 package com.example.productoscrud.domain.model;
 
 import java.math.BigDecimal;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+@Document(collection = "products")
 public class Product {
     private Integer id;
     private String name;
